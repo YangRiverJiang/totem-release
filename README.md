@@ -6,16 +6,30 @@ checksums.
 
 ## Download
 
-- APK: [totem-release-aug23-2026.apk](totem-release-aug23-2026.apk)
+- APK: [totem-release-sep15-2026.apk](totem-release-sep15-2026.apk)
 - User manual: [docs/Totem_User_Manual.pdf](docs/Totem_User_Manual.pdf)
-- Build date: Aug23-2026
-- Release date: August 23, 2026
-- App version: 2026.08.23-guest
+- Build date: Sep15-2026
+- Release date: September 15, 2026
+- App version: 2026.09.15-guest
 - Android package: `com.sleepy.totem.guest`
-- Source commit: `2db5b07`
-- SHA-256: `F5A3AA16BE93744CE5904C93E651536919EBF8CB4C20185C8D44DBA0FF5CEF94`
+- Source commit: `5ff5735`
+- SHA-256: `808ACC916ACD9B0B657BDE6196D0155D0F89BF084829E7BDFCC98712E7863481`
 
 ## APK Changelog
+
+### 2026.09.15-guest
+
+- Added configurable Android and TCP GGA location sources, including a map
+  reference marker and epoch-aligned ENU error comparison.
+- Reorganized the lower-left Map display into aligned directional Phone/Totem
+  STD and reference-error tables, with independent visibility controls and an
+  optional compact 3D STD legend.
+- Improved map marker prediction, track continuity, camera following, and map
+  provider switching for smoother high-zoom field use.
+- Prevented zero-satellite DR fallback frames from replacing the last valid
+  GNSS marker type or changing its solution color.
+- Updated the Totem and embedded Sleepy build dates and aligned this APK with
+  source commit `5ff5735`.
 
 ### 2026.08.23-guest
 
@@ -59,7 +73,7 @@ checksums.
 Install with ADB:
 
 ```powershell
-adb install -r totem-release-aug23-2026.apk
+adb install -r totem-release-sep15-2026.apk
 ```
 
 Or copy the APK to an Android phone and open it from the system file manager.
@@ -172,7 +186,7 @@ complete dataset.
 
 ## Repository Files
 
-- `totem-release-aug23-2026.apk`: installable Android release APK.
+- `totem-release-sep15-2026.apk`: installable Android release APK.
 - `docs/`: Totem user manual in PDF and Word formats.
 - `media/totem-demo-placeholder.gif`: placeholder for a future usage GIF.
 - `checksums.sha256`: APK checksum record.
